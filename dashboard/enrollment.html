@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigitX4 Codes</title>
+    <!-- Bootstrap core CSS -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Additional CSS Files -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/assets/css/fontawesome.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+</head>
+
+<body>
+
+  
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <h5 class="text-center fw-bold mb-4 text-label">STUDENT PORTAL</h5>
+
+    <a href="overview.html" class="active m-2 rounded">
+      <i class="fa-solid fa-gauge"></i> <span class="text-label">Overview</span>
+    </a>
+    <a href="admin.html" class="m-2 rounded">
+      <i class="fa-solid fa-grip-vertical"></i> <span class="text-label">Admin</span>
+    </a>
+    <a href="enrollment.html" class="m-2 rounded">
+      <i class="fa-solid fa-book-journal-whills"></i> <span class="text-label">Enrollments</span>
+    </a>
+    <a href="certificate.html" class="m-2 rounded">
+      <i class="fa-solid fa-certificate"></i> <span class="text-label">Certificates</span>
+    </a>
+    <a href="payment.html" class="m-2 rounded">
+      <i class="fa-solid fa-wallet"></i> <span class="text-label">Payments</span>
+    </a>
+    <a href="waitlist.html" class="m-2 rounded">
+      <i class="fa-solid fa-list"></i> <span class="text-label">Waitlist</span>
+    </a>
+    <a href="feedback.html" class="m-2 rounded">
+      <i class="fa-solid fa-comment"></i> <span class="text-label">Feedback</span>
+    </a>
+    <a href="logout.html" class="m-2 rounded">
+      <i class="fa-solid fa-outdent"></i> <span class="text-label text-danger">Logout</span>
+    </a>
+  </div>
+
+  <!-- MAIN AREA -->
+  <div class="main">
+    <div class="container">
+      <div class="navbar navbar-expand-md justify-content-between">
+        <div class="d-flex align-items-center">
+          <button id="toggleSidebar" class="btn btn-danger">
+            <i class="fa-solid fa-grip-vertical"></i>
+          </button>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- button -->
+        <h6 class="p-4 row justify-content-around align-items-center ">
+          <a href="/index.html" class="btn btn-danger text-white fw-bold border-0 col-md-12">Back Home</a>
+        </h6>
+      </div>
+    </div>
+
+    <script>
+      const toggleBtn = document.getElementById("toggleSidebar");
+      const sidebar = document.getElementById("sidebar");
+
+      toggleBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("collapsed");
+      });
+
+    </script>
+
+    <!-- CONTENT -->
+    <div class="container">
+
+      <h3>Welcome back, <span class="text-primary">uchechukwu!</span></h3>
+      <p class="text-muted">Manage your enrollments and track your learning progress.</p>
+
+      <!-- STAT CARDS -->
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="stat-card">
+            <h6>Active Enrollments</h6>
+            <h3>2</h3>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="stat-card">
+            <h6>Completed</h6>
+            <h3>0</h3>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="stat-card">
+            <h6>Waitlist Programs</h6>
+            <h3>0</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- RECENT ACTIVITY -->
+      <div class="stat-card mt-4">
+        <h5>Recent Activity</h5>
+        <p class="text-muted">No recent activity</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

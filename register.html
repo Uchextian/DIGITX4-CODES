@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>DigitX4 Codes</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <!-- Additional CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+</head>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area ">
+    <div class="container">
+      <div class="navbar navbar-expand-md d-flex justify-content-between align-items-center">
+        <!-- ***** LOGO ***** -->
+        <a href="index.html" class="navbar navbar-expand-md">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="assets/images/logo.png" class="img-fluid" alt="">
+            <h6 class="fw-bold text-white">DIGITX4 <br> CODES</h6>
+          </div>
+        </a>
+
+        <!-- button -->
+        <h6 class="p-4 row justify-content-around align-items-center ">
+          <a href="index.html" class="btn btn-danger text-white fw-bold border-0 col-md-12">Back Home</a>
+        </h6>
+      </div>
+    </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- LOGIN FORM -->
+  <div class="  d-flex justify-content-center align-items-center py-5 mt-5">
+    <div class="card mt-3">
+      <div class="d-flex justify-content-center align-items-center mt-4">
+        <img src="assets/images/logo.png" class="img-fluid" alt="" style="height: 30px; width: 30px;">
+        <h5 class="text-center mb-1 ms-2"> JOIN DIGITX4 CODES</h5>
+      </div>
+      <p class="text-center text-muted mb-4">Create your account to get started</p>
+
+      <form action="login.php" method="POST">
+
+        <div class="mb-3">
+          <label>Full Name</label>
+          <input type="text" class="form-control" name="fullname" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="mb-3">
+          <label>Email</label>
+          <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="mb-3 position-relative">
+          <label>Password</label>
+          <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password"
+            required>
+          <span class="position-absolute top-50 end-0 translate-middle-y me-3" style="cursor:pointer;"
+            onclick="togglePassword()">
+            👁️
+          </span>
+        </div>
+
+        <div class="mb-3 position-relative">
+          <label>Confirm Password</label>
+          <input type="password" class="form-control" name="ConfirmPassword" id="password" placeholder="Enter your password"
+            required>
+          <span class="position-absolute top-50 end-0 translate-middle-y me-3" style="cursor:pointer;"
+            onclick="togglePassword()">
+            👁️
+          </span>
+        </div>
+
+        <button class="btn btn-login mt-2">Create account</button>
+
+        <div class="d-flex justify-content-between mt-2">
+          <a href="#">Forgot your password?</a>
+        </div>
+
+        <div class="text-center my-3 text-muted d-flex justify-content-center align-items-center">
+          <hr style="width: 50%;">
+          OR CONTINUE WITH
+          <hr style="width: 50%;">
+        </div>
+
+        <button type="button" class="btn btn-google mb-3 ">
+          <img src="assets/images/google1.png" class="img-fluid"  alt="">
+          Create account with Google 
+        </button>
+
+        <div class="text-center">
+          Already have an account? <a href="login.html">Login</a>
+        </div>
+
+      </form>
+    </div>
+
+    <script>
+      function togglePassword() {
+        const passwordField = document.getElementById("password");
+        passwordField.type = passwordField.type === "password" ? "text" : "password";
+      }
+    </script>
+  </div>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/slick-slider.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    //according to loftblog tut
+    $('.nav li:first').addClass('active');
+
+    var showSection = function showSection(section, isAnimate) {
+      var
+        direction = section.replace(/#/, ''),
+        reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+        reqSectionPos = reqSection.offset().top - 0;
+
+      if (isAnimate) {
+        $('body, html').animate({
+          scrollTop: reqSectionPos
+        },
+          800);
+      } else {
+        $('body, html').scrollTop(reqSectionPos);
+      }
+
+    };
+
+    var checkSection = function checkSection() {
+      $('.section').each(function () {
+        var
+          $this = $(this),
+          topEdge = $this.offset().top - 80,
+          bottomEdge = topEdge + $this.height(),
+          wScroll = $(window).scrollTop();
+        if (topEdge < wScroll && bottomEdge > wScroll) {
+          var
+            currentId = $this.data('section'),
+            reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+          reqLink.closest('li').addClass('active').
+            siblings().removeClass('active');
+        }
+      });
+    };
+
+    $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+      e.preventDefault();
+      showSection($(this).attr('href'), true);
+    });
+
+    $(window).scroll(function () {
+      checkSection();
+    });
+  </script>
+</body>
+
+</html>
